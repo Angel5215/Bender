@@ -360,7 +360,7 @@ void display(void)	//	Creamos la funcion donde se dibuja
 	glVertex3f(134, 35, 0);
 	glVertex3f(131, 34.7, 0);
 	glVertex3f(128, 35, 0);
-	glVertex3f(124.5, 36, 0);	//	PUNTO DE UNIÓN D2
+	glVertex3f(124.5, 36, 0);	//	PUNTO DE UNIÓN D1
 	glVertex3f(122, 34, 0);
 	glVertex3f(120, 32.5, 0);
 	glVertex3f(118, 31, 0);
@@ -370,10 +370,8 @@ void display(void)	//	Creamos la funcion donde se dibuja
 	glEnd();
 
 
-
 	//	Pie derecho (contorno)
 	glColor3f(0, 0, 0);
-	glLineWidth(1.0);
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	glBegin(GL_POLYGON);
@@ -405,7 +403,7 @@ void display(void)	//	Creamos la funcion donde se dibuja
 	glVertex3f(134, 35, 0);
 	glVertex3f(131, 34.7, 0);
 	glVertex3f(128, 35, 0);
-	glVertex3f(124.5, 36, 0);	//	PUNTO DE UNIÓN D2
+	glVertex3f(124.5, 36, 0);	//	PUNTO DE UNIÓN D1
 	glVertex3f(122, 34, 0);
 	glVertex3f(120, 32.5, 0);
 	glVertex3f(118, 31, 0);
@@ -413,7 +411,194 @@ void display(void)	//	Creamos la funcion donde se dibuja
 	glVertex3f(115, 27, 0);
 
 	glEnd();
-	glLineWidth(1.0);
+
+	//	Pierna derecha (RELLENO)
+	glColor3f(0.6705, 0.7294, 0.8078);
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(138, 37.5, 0);	//	PUNTO DE UNIÓN D1
+	glVertex3f(136, 36, 0);
+	glVertex3f(134, 35, 0);
+	glVertex3f(131, 34.7, 0);
+	glVertex3f(128, 35, 0);
+	glVertex3f(124.5, 36, 0);	//	PUNTO DE UNIÓN D1
+
+	glVertex3f(123, 38, 0);
+	glVertex3f(121, 40, 0);		//	PUNTO DE UNIÓN D2
+	glVertex3f(120, 42, 0);
+	glVertex3f(118, 45, 0);
+	glVertex3f(116, 48, 0);
+	glVertex3f(115, 50, 0);		//	PUNTO DE UNIÓN D3
+	glVertex3f(114, 53, 0);
+	glVertex3f(113, 55.5, 0);
+	glVertex3f(112, 58, 0);
+	glVertex3f(111.5, 60.5, 0);	//	PUNTO DE UNIÓN D4
+	glVertex3f(111, 64, 0);
+	glVertex3f(110.7, 67.5, 0);
+	glVertex3f(111, 70, 0);
+	glVertex3f(111.2, 72, 0);	//	PUNTO DE UNIÓN D5
+	glVertex3f(112, 76, 0);
+	glVertex3f(113, 80, 0);
+	glVertex3f(114.5, 83.5, 0);	//	PUNTO DE UNIÓN D6
+	glVertex3f(115.5, 86, 0);
+	glVertex3f(116.5, 88, 0);	//	PUNTO DE UNIÓN D7
+	glVertex3f(120, 88.2, 0);
+	glVertex3f(125, 89, 0);
+	glVertex3f(130, 89.5, 0);	//	PUNTO DE UNIÓN D7
+	glVertex3f(128, 87, 0);
+	glVertex3f(127, 85, 0);
+	glVertex3f(126, 82, 0);
+	glVertex3f(125, 80, 0);		//	PUNTO DE UNIÓN D6
+	glVertex3f(124, 77, 0);
+	glVertex3f(123.5, 75, 0);
+	glVertex3f(122.8, 72, 0);
+	glVertex3f(123, 70, 0);		//	PUNTO DE UNIÓN D5
+	glVertex3f(123.2, 66.5, 0);
+	glVertex3f(123.7, 63, 0);
+	glVertex3f(124, 60.5, 0);	//	PUNTO DE UNIÓN D4
+	glVertex3f(125, 58, 0);
+	glVertex3f(126, 55, 0);
+	glVertex3f(127, 52.5, 0);	//	PUNTO DE UNIÓN D3
+	glVertex3f(129, 50, 0);
+	glVertex3f(131, 46.5, 0);
+	glVertex3f(132, 45, 0);		//	PUNTO DE UNIÓN D2
+	glVertex3f(134, 42, 0);
+	glVertex3f(137, 39, 0);
+
+	glEnd();
+
+	//	Correción color 1
+	glColor3f(1, 1, 1);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(130, 89.5, 0);	//	PUNTO DE UNIÓN D7
+	glVertex3f(128, 87, 0);
+	glVertex3f(127, 85, 0);
+	glVertex3f(126, 82, 0);
+	glVertex3f(125, 80, 0);		//	PUNTO DE UNIÓN D6
+	glVertex3f(124, 77, 0);
+	glVertex3f(123.5, 75, 0);
+	glVertex3f(122.8, 72, 0);
+	glVertex3f(123, 70, 0);		//	PUNTO DE UNIÓN D5
+	glVertex3f(123.2, 66.5, 0);
+	glVertex3f(123.7, 63, 0);
+	glVertex3f(124, 60.5, 0);	//	PUNTO DE UNIÓN D4
+	glVertex3f(125, 58, 0);
+	glVertex3f(126, 55, 0);
+	glVertex3f(127, 52.5, 0);	//	PUNTO DE UNIÓN D3
+	glVertex3f(129, 50, 0);
+	glVertex3f(131, 46.5, 0);
+	glVertex3f(132, 45, 0);		//	PUNTO DE UNIÓN D2
+	glVertex3f(134, 42, 0);
+	glVertex3f(137, 39, 0);
+	glVertex3f(138, 37.5, 0);	//	PUNTO DE UNIÓN D1
+
+	glEnd();
+
+	//	Pierna derecha (contorno)
+	glColor3f(0, 0, 0);
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(138, 37.5, 0);	//	PUNTO DE UNIÓN D1
+	glVertex3f(136, 36, 0);
+	glVertex3f(134, 35, 0);
+	glVertex3f(131, 34.7, 0);
+	glVertex3f(128, 35, 0);
+	glVertex3f(124.5, 36, 0);	//	PUNTO DE UNIÓN D1
+
+	glVertex3f(123, 38, 0);
+	glVertex3f(121, 40, 0);		//	PUNTO DE UNIÓN D2
+	glVertex3f(120, 42, 0);
+	glVertex3f(118, 45, 0);
+	glVertex3f(116, 48, 0);
+	glVertex3f(115, 50, 0);		//	PUNTO DE UNIÓN D3
+	glVertex3f(114, 53, 0);
+	glVertex3f(113, 55.5, 0);
+	glVertex3f(112, 58, 0);
+	glVertex3f(111.5, 60.5, 0);	//	PUNTO DE UNIÓN D4
+	glVertex3f(111, 64, 0);
+	glVertex3f(110.7, 67.5, 0);
+	glVertex3f(111, 70, 0);
+	glVertex3f(111.2, 72, 0);	//	PUNTO DE UNIÓN D5
+	glVertex3f(112, 76, 0);
+	glVertex3f(113, 80, 0);
+	glVertex3f(114.5, 83.5, 0);	//	PUNTO DE UNIÓN D6
+	glVertex3f(115.5, 86, 0);
+	glVertex3f(116.5, 88, 0);	//	PUNTO DE UNIÓN D7
+	glVertex3f(120, 88.2, 0);
+	glVertex3f(125, 89, 0);
+	glVertex3f(130, 89.5, 0);	//	PUNTO DE UNIÓN D7
+	glVertex3f(128, 87, 0);
+	glVertex3f(127, 85, 0);
+	glVertex3f(126, 82, 0);
+	glVertex3f(125, 80, 0);		//	PUNTO DE UNIÓN D6
+	glVertex3f(124, 77, 0);
+	glVertex3f(123.5, 75, 0);
+	glVertex3f(122.8, 72, 0);
+	glVertex3f(123, 70, 0);		//	PUNTO DE UNIÓN D5
+	glVertex3f(123.2, 66.5, 0);
+	glVertex3f(123.7, 63, 0);
+	glVertex3f(124, 60.5, 0);	//	PUNTO DE UNIÓN D4
+	glVertex3f(125, 58, 0);
+	glVertex3f(126, 55, 0);
+	glVertex3f(127, 52.5, 0);	//	PUNTO DE UNIÓN D3
+	glVertex3f(129, 50, 0);
+	glVertex3f(131, 46.5, 0);
+	glVertex3f(132, 45, 0);		//	PUNTO DE UNIÓN D2
+	glVertex3f(134, 42, 0);
+	glVertex3f(137, 39, 0);
+
+	glEnd();
+
+	//	Líneas para pierna derecha
+	glColor3f(0, 0, 0);
+
+	glBegin(GL_LINE_STRIP);
+	glVertex3f(121, 40, 0);		//	PUNTO DE UNIÓN D2
+	glVertex3f(125, 40.5, 0);
+	glVertex3f(128, 42, 0);
+	glVertex3f(132, 45, 0);		//	PUNTO DE UNIÓN D2
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+	glVertex3f(115, 50, 0);		//	PUNTO DE UNIÓN D3
+	glVertex3f(120, 50, 0);
+	glVertex3f(124, 51, 0);
+	glVertex3f(127, 52.5, 0);	//	PUNTO DE UNIÓN D3
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+	glVertex3f(111.5, 60.5, 0);	//	PUNTO DE UNIÓN D4
+	glVertex3f(115, 59.5, 0);
+	glVertex3f(118, 59, 0);
+	glVertex3f(121, 59.5, 0);
+	glVertex3f(124, 60.5, 0);	//	PUNTO DE UNIÓN D4
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+	glVertex3f(111.2, 72, 0);	//	PUNTO DE UNIÓN D5
+	glVertex3f(115, 70.5, 0);
+	glVertex3f(119, 69.7, 0);
+	glVertex3f(123, 70, 0);		//	PUNTO DE UNIÓN D5
+
+	glEnd();
+	
+	glBegin(GL_LINE_STRIP);
+	glVertex3f(114.5, 83.5, 0);	//	PUNTO DE UNIÓN D6
+	glVertex3f(116.5, 81.5, 0);
+	glVertex3f(120, 80.5, 0);
+	glVertex3f(125, 80, 0);		//	PUNTO DE UNIÓN D6
+
+	glEnd();
+
 
 	//	Cabello (0000 0001)
 	/* glColor3f(0, 0, 0);
