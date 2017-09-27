@@ -764,7 +764,7 @@ void display(void)	//	Creamos la funcion donde se dibuja
 
 	glEnd();
 
-	
+
 	//	PECHO (RELLENO)
 	glColor3f(0.8745, 0.9098, 0.9411);
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
@@ -862,6 +862,262 @@ void display(void)	//	Creamos la funcion donde se dibuja
 	glVertex3f(142, 156.5, 0);
 
 	glEnd();
+
+	//	CABEZA (COLOR)
+	glColor3f(0.7882, 0.8313, 0.8823);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(130, 166, 0);	//	PUNTO DE UNIÓN CA1
+	glVertex3f(127, 164, 0);
+	glVertex3f(123.5, 162.5, 0);
+	glVertex3f(120, 162, 0);
+	glVertex3f(115, 161, 0);
+	glVertex3f(110, 161, 0);
+	glVertex3f(106, 161.5, 0);
+	glVertex3f(103, 162, 0);
+	glVertex3f(100, 163, 0);
+	glVertex3f(98.5, 163.5, 0);
+	glVertex3f(98.5, 166, 0);	//	PUNTO DE UNIÓN CA1
+
+	glVertex3f(98.5, 168.5, 0);
+	glVertex3f(99, 169.5, 0);
+	glVertex3f(101, 170, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(101, 178, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(96, 178, 0);
+	glVertex3f(96, 184, 0);		//	PUNTO DE UNIÓN OJOS
+	glVertex3f(90, 184, 0);
+	glVertex3f(88, 185, 0);
+	glVertex3f(86, 186.5, 0);
+	glVertex3f(85, 189, 0);
+	glVertex3f(85, 194, 0);
+	glVertex3f(85.5, 196.5, 0);
+	glVertex3f(87, 198.5, 0);
+	glVertex3f(89.5, 200, 0);
+	glVertex3f(97, 204, 0);		//	PUNTO DE UNIÓN OJOS
+	glVertex3f(97, 210, 0);
+	glVertex3f(97.5, 213.5, 0);
+	glVertex3f(98.5, 216, 0);
+	glVertex3f(100, 219, 0);
+	glVertex3f(102, 221, 0);
+	glVertex3f(104, 222, 0);
+	glVertex3f(106.5, 223.5, 0);
+	glVertex3f(109.5, 224.5, 0);	//	PUNTO DE UNIÓN ANTENA 1
+	glVertex3f(110, 223, 0);
+	glVertex3f(112, 222.5, 0);
+	glVertex3f(114, 222, 0);
+	glVertex3f(118, 222, 0);
+	glVertex3f(120, 222.5, 0);
+	glVertex3f(120.5, 223, 0);		//	PUNTO DE UNIÓN ANTENA 1
+	glVertex3f(123, 222.5, 0);
+	glVertex3f(125, 221, 0);
+	glVertex3f(126.5, 219.5, 0);
+	glVertex3f(129, 216.5, 0);
+	glVertex3f(130, 213.5, 0);
+	glVertex3f(131, 210, 0);
+
+
+	glEnd();
+
+	//	CABEZA (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(130, 166, 0);	//	PUNTO DE UNIÓN CA1
+	glVertex3f(127, 164, 0);
+	glVertex3f(123.5, 162.5, 0);
+	glVertex3f(120, 162, 0);
+	glVertex3f(115, 161, 0);
+	glVertex3f(110, 161, 0);
+	glVertex3f(106, 161.5, 0);
+	glVertex3f(103, 162, 0);
+	glVertex3f(100, 163, 0);
+	glVertex3f(98.5, 163.5, 0);
+	glVertex3f(98.5, 166, 0);	//	PUNTO DE UNIÓN CA1
+
+	glVertex3f(98.5, 168.5, 0);
+	glVertex3f(99, 169.5, 0);
+	glVertex3f(101, 170, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(101, 178, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(96, 178, 0);
+	glVertex3f(96, 184, 0);		//	PUNTO DE UNIÓN OJOS
+	glVertex3f(90, 184, 0);
+	glVertex3f(88, 185, 0);
+	glVertex3f(86, 186.5, 0);
+	glVertex3f(85, 189, 0);
+	glVertex3f(85, 194, 0);
+	glVertex3f(85.5, 196.5, 0);
+	glVertex3f(87, 198.5, 0);
+	glVertex3f(89.5, 200, 0);
+	glVertex3f(97, 204, 0);		//	PUNTO DE UNIÓN OJOS
+	glVertex3f(97, 210, 0);
+	glVertex3f(97.5, 213.5, 0);
+	glVertex3f(98.5, 216, 0);
+	glVertex3f(100, 219, 0);
+	glVertex3f(102, 221, 0);
+	glVertex3f(104, 222, 0);
+	glVertex3f(106.5, 223.5, 0);
+	glVertex3f(109.5, 224.5, 0);	//	PUNTO DE UNIÓN ANTENA 1
+	glVertex3f(110, 223, 0);
+	glVertex3f(112, 222.5, 0);
+	glVertex3f(114, 222, 0);
+	glVertex3f(118, 222, 0);
+	glVertex3f(120, 222.5, 0);
+	glVertex3f(120.5, 223, 0);		//	PUNTO DE UNIÓN ANTENA 1
+	glVertex3f(123, 222.5, 0);
+	glVertex3f(125, 221, 0);
+	glVertex3f(126.5, 219.5, 0);
+	glVertex3f(129, 216.5, 0);
+	glVertex3f(130, 213.5, 0);
+	glVertex3f(131, 210, 0);
+
+
+	glEnd();
+
+	//	DIENTES (CONTORNO)
+	glColor3f(0.9882, 0.9764, 0.8470);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(101, 170, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(101, 178, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(120, 178, 0);
+	glVertex3f(121.8, 177, 0);
+	glVertex3f(123.5, 176, 0);
+	glVertex3f(124, 175, 0);
+	glVertex3f(124, 170.5, 0);
+	glVertex3f(123, 168.5, 0);
+	glVertex3f(121, 167, 0);
+	glVertex3f(118.8, 166.5, 0);
+	glVertex3f(103, 166.5, 0);
+	glVertex3f(101.5, 167.5, 0);
+	glVertex3f(101.6, 168.5, 0);
+
+	glEnd();
+
+
+	//	DIENTES (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(101, 170, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(101, 178, 0);	//	PUNTO DE UNIÓN BOCA
+	glVertex3f(120, 178, 0);
+	glVertex3f(121.8, 177, 0);
+	glVertex3f(123.5, 176, 0);
+	glVertex3f(124, 175, 0);
+	glVertex3f(124, 170.5, 0);
+	glVertex3f(123, 168.5, 0);
+	glVertex3f(121, 167, 0);
+	glVertex3f(118.8, 166.5, 0);
+	glVertex3f(103, 166.5, 0);
+	glVertex3f(101.5, 167.5, 0);
+	glVertex3f(101.6, 168.5, 0);
+
+	glEnd();
+
+	//	LINEAS DIENTES (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	glBegin(GL_LINE_STRIP);
+
+	glVertex3f(101, 169.5, 0);
+	glVertex3f(119, 169.5, 0);
+	glVertex3f(121.5, 170, 0);
+	glVertex3f(124, 171, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+	glVertex3f(101, 174.5, 0);
+	glVertex3f(119, 174.5, 0);
+	glVertex3f(121.5, 175, 0);
+	glVertex3f(124, 176, 0);
+
+	glEnd();
+
+	glBegin(GL_LINES);
+
+	glVertex3f(106, 178, 0);
+	glVertex3f(106, 166, 0);
+
+	glVertex3f(112, 178, 0);
+	glVertex3f(112, 166, 0);
+
+	glVertex3f(119, 178, 0);
+	glVertex3f(119, 166, 0);
+
+
+	glEnd();
+
+	//	OJOS (CONTORNO)
+	glColor3f(0.8745, 0.9098, 0.9411);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(96, 184, 0);		//	PUNTO DE UNIÓN OJOS
+	glVertex3f(90, 184, 0);
+	glVertex3f(88, 185, 0);
+	glVertex3f(86, 186.5, 0);
+	glVertex3f(85, 189, 0);
+	glVertex3f(85, 194, 0);
+	glVertex3f(85.5, 196.5, 0);
+	glVertex3f(87, 198.5, 0);
+	glVertex3f(89.5, 200, 0);
+	glVertex3f(97, 204, 0);		//	PUNTO DE UNIÓN OJOS
+
+	glVertex3f(99, 203.5, 0);
+	glVertex3f(101, 202.5, 0);
+	glVertex3f(118, 202.5, 0);
+	glVertex3f(120, 202, 0);
+	glVertex3f(122.3, 200, 0);
+	glVertex3f(123.5, 198.5, 0);
+	glVertex3f(123.5, 189, 0);
+	glVertex3f(122.5, 187, 0);
+	glVertex3f(120, 185, 0);
+	glVertex3f(118.7, 184.5, 0);
+
+	glEnd();
+
+	//	OJOS (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(96, 184, 0);		//	PUNTO DE UNIÓN OJOS
+	glVertex3f(90, 184, 0);
+	glVertex3f(88, 185, 0);
+	glVertex3f(86, 186.5, 0);
+	glVertex3f(85, 189, 0);
+	glVertex3f(85, 194, 0);
+	glVertex3f(85.5, 196.5, 0);
+	glVertex3f(87, 198.5, 0);
+	glVertex3f(89.5, 200, 0);
+	glVertex3f(97, 204, 0);		//	PUNTO DE UNIÓN OJOS
+
+	glVertex3f(99, 203.5, 0);
+	glVertex3f(101, 202.5, 0);
+	glVertex3f(118, 202.5, 0);
+	glVertex3f(120, 202, 0);
+	glVertex3f(122.3, 200, 0);
+	glVertex3f(123.5, 198.5, 0);
+	glVertex3f(123.5, 189, 0);
+	glVertex3f(122.5, 187, 0);
+	glVertex3f(120, 185, 0);
+	glVertex3f(118.7, 184.5, 0);
+
+	glEnd();
+	
 
 	
 
