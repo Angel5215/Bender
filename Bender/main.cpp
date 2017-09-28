@@ -1242,6 +1242,282 @@ void display(void)	//	Creamos la funcion donde se dibuja
 
 	glEnd();
 
+	//	BASE ANTENA (CONTORNO)
+	glColor3f(0.8745, 0.9098, 0.9411);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(120.5, 223, 0);		//	PUNTO DE UNIÓN ANTENA 1
+	glVertex3f(120, 222.5, 0);
+	glVertex3f(118, 222, 0);
+	glVertex3f(114, 222, 0);
+	glVertex3f(112, 222.5, 0);
+	glVertex3f(110, 223, 0);
+	glVertex3f(109.5, 224.5, 0);	//	PUNTO DE UNIÓN ANTENA 1
+
+	glVertex3f(111, 226.5, 0);
+	glVertex3f(113, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(113.5, 226, 0);
+	glVertex3f(115, 225.5, 0);
+	glVertex3f(117, 226, 0);
+	glVertex3f(118, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(119, 226, 0);
+
+	glEnd();
+	
+
+	//	BASE ANTENA (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(120.5, 223, 0);		//	PUNTO DE UNIÓN ANTENA 1
+	glVertex3f(120, 222.5, 0);
+	glVertex3f(118, 222, 0);
+	glVertex3f(114, 222, 0);
+	glVertex3f(112, 222.5, 0);
+	glVertex3f(110, 223, 0);
+	glVertex3f(109.5, 224.5, 0);	//	PUNTO DE UNIÓN ANTENA 1
+	
+	glVertex3f(111, 226.5, 0);
+	glVertex3f(113, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(113.5, 226, 0);
+	glVertex3f(115, 225.5, 0);
+	glVertex3f(117, 226, 0);
+	glVertex3f(118, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(119, 226, 0);
+
+	glEnd();
+
+	//	PARTE 2 ANTENA (RELLENO)
+	glColor3f(0.7882, 0.8313, 0.8823);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(118, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(117, 226, 0);
+	glVertex3f(115, 225.5, 0);
+	glVertex3f(113.5, 226, 0);
+	glVertex3f(113, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(114, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+	glVertex3f(115.5, 240.5, 0);
+	glVertex3f(117, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+
+	glEnd();
+
+
+	//	PARTE 2 ANTENA (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(118, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(117, 226, 0);
+	glVertex3f(115, 225.5, 0);
+	glVertex3f(113.5, 226, 0);
+	glVertex3f(113, 227, 0);		//	PUNTO DE UNIÓN ANTENA 2
+	glVertex3f(114, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+	glVertex3f(115.5, 240.5, 0);
+	glVertex3f(117, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+
+	glEnd();
+
+	//	PARTE 3 ANTENA (RELLENO)
+	glColor3f(0.8745, 0.9098, 0.9411);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(117, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+	glVertex3f(115.5, 240.5, 0);
+	glVertex3f(114, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+	glVertex3f(113.2, 242, 0);
+	glVertex3f(113.2, 244, 0);
+	glVertex3f(114, 245.5, 0);
+	glVertex3f(116, 246, 0);
+	glVertex3f(118, 245.2, 0);
+	glVertex3f(118.5, 243.7, 0);
+	glVertex3f(118.3, 241.5, 0);
+
+	glEnd();
+
+	//	PARTE 3 ANTENA (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	glBegin(GL_POLYGON);
+
+	glVertex3f(117, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+	glVertex3f(115.5, 240.5, 0);
+	glVertex3f(114, 241, 0);		//	PUNTO DE UNIÓN ANTENA 3
+	glVertex3f(113.2, 242, 0);
+	glVertex3f(113.2, 244, 0);
+	glVertex3f(114, 245.5, 0);
+	glVertex3f(116, 246, 0);
+	glVertex3f(118, 245.2, 0);
+	glVertex3f(118.5, 243.7, 0);
+	glVertex3f(118.3, 241.5, 0);
+
+	glEnd();
+
+	//	DEDOS IZQUIERDOS 1 (RELLENO)
+	glColor3f(0.7882, 0.8313, 0.8823);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(65, 81, 0);
+	glVertex3f(65.2, 84, 0);
+	glVertex3f(66.3, 86.5, 0);		//	PUNTO DE UNIÓN BR11
+	glVertex3f(68, 86, 0);
+	glVertex3f(70, 85.7, 0);		//	PUNTO DE UNIÓN BR11
+	glVertex3f(70, 81, 0);
+	glVertex3f(69, 79, 0);
+	glVertex3f(67, 79.3, 0);
+
+	glEnd();
+
+	//	DEDOS IZQUIERDOS 2 (RELLENO)
+	glColor3f(0.7882, 0.8313, 0.8823);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(73.2, 78.5, 0);
+	glVertex3f(72.7, 80, 0);
+	glVertex3f(72, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+	glVertex3f(73.8, 85, 0);
+	glVertex3f(75.5, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+	glVertex3f(78, 80, 0);
+	glVertex3f(76.5, 78.5, 0);
+	glVertex3f(75, 78, 0);
+
+	glEnd();
+
+	//	DEDOS IZQUIERDOS 3 (RELLENO)
+	glColor3f(0.7882, 0.8313, 0.8823);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(80, 80, 0);
+	glVertex3f(77.3, 86, 0);	//	PUNTO DE UNIÓN BR13
+	glVertex3f(82, 86.5, 0);	//	PUNTO DE UNIÓN BR13
+	glVertex3f(84, 82, 0);
+	glVertex3f(84, 81, 0);
+	glVertex3f(82, 79, 0);
+
+	glEnd();
+
+
+	//	DEDOS IZQUIERDOS 1 (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(65, 81, 0);
+	glVertex3f(65.2, 84, 0);
+	glVertex3f(66.3, 86.5, 0);		//	PUNTO DE UNIÓN BR11
+	glVertex3f(68, 86, 0);			
+	glVertex3f(70, 85.7, 0);		//	PUNTO DE UNIÓN BR11
+	glVertex3f(70, 81, 0);
+	glVertex3f(69, 79, 0);
+	glVertex3f(67, 79.3, 0);
+
+	glEnd();
+
+	//	DEDOS IZQUIERDOS 2 (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_POLYGON);
+	
+	glVertex3f(73.2, 78.5, 0);
+	glVertex3f(72.7, 80, 0);
+	glVertex3f(72, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+	glVertex3f(73.8, 85, 0);
+	glVertex3f(75.5, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+	glVertex3f(78, 80, 0);
+	glVertex3f(76.5, 78.5, 0);
+	glVertex3f(75, 78, 0);
+
+	glEnd();
+
+	//	DEDOS IZQUIERDOS 3 (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(80, 80, 0);
+	glVertex3f(77.3, 86, 0);	//	PUNTO DE UNIÓN BR13
+	glVertex3f(82, 86.5, 0);	//	PUNTO DE UNIÓN BR13
+	glVertex3f(84, 82, 0);
+	glVertex3f(84, 81, 0);
+	glVertex3f(82, 79, 0);
+
+	glEnd();
+
+	//	MUÑECA IZQUIERDA (RELLENO)
+	glColor3f(0.7882, 0.8313, 0.8823);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(82, 86.5, 0);	//	PUNTO DE UNIÓN BR13
+	glVertex3f(77.3, 86, 0);	//	PUNTO DE UNIÓN BR13
+
+	glVertex3f(75.5, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+	glVertex3f(73.8, 85, 0);
+	glVertex3f(72, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+
+	glVertex3f(70, 85.7, 0);		//	PUNTO DE UNIÓN BR11
+	glVertex3f(68, 86, 0);
+	glVertex3f(66.3, 86.5, 0);		//	PUNTO DE UNIÓN BR11
+
+	glVertex3f(67.4, 92, 0);
+	glVertex3f(69.7, 96.5, 0);		//	PUNTO UNIÓN BR2
+	glVertex3f(72, 95.5, 0);
+	glVertex3f(74, 95, 0);
+	glVertex3f(76.5, 95, 0);
+	glVertex3f(78.7, 95.7, 0);
+	glVertex3f(80, 93.5, 0);
+
+	glEnd();
+
+	//	MUÑECA IZQUIERDA (CONTORNO)
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_POLYGON);
+
+	glVertex3f(82, 86.5, 0);	//	PUNTO DE UNIÓN BR13
+	glVertex3f(77.3, 86, 0);	//	PUNTO DE UNIÓN BR13
+
+	glVertex3f(75.5, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+	glVertex3f(73.8, 85, 0);
+	glVertex3f(72, 85.2, 0);		//	PUNTO DE UNIÓN BR12
+
+	glVertex3f(70, 85.7, 0);		//	PUNTO DE UNIÓN BR11
+	glVertex3f(68, 86, 0);
+	glVertex3f(66.3, 86.5, 0);		//	PUNTO DE UNIÓN BR11
+
+	glVertex3f(67.4, 92, 0);
+	glVertex3f(69.7, 96.5, 0);		//	PUNTO UNIÓN BR2
+	glVertex3f(72, 95.5, 0);
+	glVertex3f(74, 95, 0);
+	glVertex3f(76.5, 95, 0);
+	glVertex3f(78.7, 95.7, 0);
+	glVertex3f(80, 93.5, 0);
+
+	glEnd();
+
+
+	/*
+
+	glColor3f(0, 0, 0);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_LINE_STRIP);
+
+	glEnd();
+	
+	*/
+
 	glFlush();
 }
 
