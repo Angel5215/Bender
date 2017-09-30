@@ -1948,6 +1948,124 @@ void display(void)	//	Creamos la funcion donde se dibuja
 
 	glEnd();
 
+	///LINEAS DEDOS DERECHOS
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(144.5, 75, 0);
+		glVertex3f(145, 76.5, 0);
+		glVertex3f(146.3, 77.3, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(139, 74.5, 0);
+		glVertex3f(139.2, 77, 0);
+		glVertex3f(139.6, 79.5, 0);
+		glVertex3f(141, 82, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(133.5, 77.3, 0);
+		glVertex3f(134, 81, 0);
+		glVertex3f(136, 84.7, 0);
+
+	glEnd();
+
+	////LINEAS BRAZO DERECHO
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(156.5, 93, 0);
+		glVertex3f(153.2, 96, 0);
+		glVertex3f(148, 97.5, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(161.4, 102.5, 0);
+		glVertex3f(159, 104.5, 0);
+		glVertex3f(156, 105.5, 0);
+		glVertex3f(152.5, 105.2, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(163.2, 114, 0);
+		glVertex3f(161, 115, 0);
+		glVertex3f(157, 115.2, 0);
+		glVertex3f(153.5, 113.7, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(160.5, 125.5, 0);
+		glVertex3f(157, 125.8, 0);
+		glVertex3f(154, 125, 0);
+		glVertex3f(151, 123.5, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(155, 136, 0);
+		glVertex3f(152, 135.5, 0);
+		glVertex3f(149, 134, 0);
+		glVertex3f(146.5, 131.5, 0);
+
+	glEnd();
+
+	//LINEAS BRAZO IZQUIERDA
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(78.5, 104.4, 0);
+		glVertex3f(76, 104, 0);
+		glVertex3f(72.5, 104, 0);
+		glVertex3f(69.5, 105, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(79, 112.7, 0);
+		glVertex3f(76, 112.2, 0);
+		glVertex3f(72.5, 113.4, 0);
+		glVertex3f(70, 114.8, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(80, 121.3, 0);
+		glVertex3f(77, 121, 0);
+		glVertex3f(73.5, 122.9, 0);
+		glVertex3f(71.2, 123.9, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(82.2, 129.8, 0);
+		glVertex3f(79, 130, 0);
+		glVertex3f(76.4, 131.2, 0);
+		glVertex3f(73.9, 133.5, 0);
+
+	glEnd();
+
+	glBegin(GL_LINE_STRIP);
+
+		glVertex3f(84.7, 136.8, 0);
+		glVertex3f(81.8, 137.9, 0);
+		glVertex3f(80, 139, 0);
+		glVertex3f(78.3, 141.5, 0);
+
+	glEnd();
+
+
 	/*
 
 	glColor3f(0, 0, 0);
