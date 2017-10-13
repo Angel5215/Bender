@@ -16,13 +16,6 @@
 #include "Main.h"
 void InitGL(GLvoid)
 {
-	/* glShadeModel(GL_SMOOTH);							// Habilitamos Smooth Shading
-	glClearDepth(1.0f);									// Configuramos Depth Buffer
-	glEnable(GL_DEPTH_TEST);							// Habilitamos Depth Testing
-
-	glDepthFunc(GL_LEQUAL);								// Tipo de Depth Testing a realizar
-	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);*/
-
 	//	Color plata de fondo.
 	glClearColor(1.0000, 1.0000, 1.0000, 0.0);
 }
@@ -2064,20 +2057,6 @@ void display(void)	//	Creamos la funcion donde se dibuja
 		glVertex3f(78.3, 141.5, 0);
 
 	glEnd();
-
-
-	/*
-
-	glColor3f(0, 0, 0);
-	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-	glBegin(GL_LINE_STRIP);
-
-	glEnd();
-
-	glVertex3f(88, 133.5, 0);	//	PUNTO DE UNIÓN BI1
-	glVertex3f(86.5, 153, 0);	//	PUNTO DE UNIÓN BI1
-	
-	*/
 
 	glFlush();
 }
